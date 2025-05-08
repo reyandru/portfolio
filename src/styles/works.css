@@ -1,0 +1,148 @@
+.works_section {
+  background-image: url('../assets/skills-bg.avif');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.works_section > h1 {
+  color: white;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.work-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  width: 100%;
+  max-width: 1500px; 
+  height: auto;
+  padding: 1rem;
+  overflow-x: hidden;  
+  overflow-y: auto;   
+  cursor: pointer;
+  box-sizing: border-box; 
+}
+
+.work-photos img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.work-photos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-projects {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 90%;
+  width: 80%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.80);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.close-modal {
+  width: 3%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+
+.close-modal:hover {
+  background-color: rgba(255, 255, 255, 0.50);
+}
+
+.close-conts {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 5%;
+}
+
+.modal-projects img {
+  width: 70%;
+  height: 60%;
+}
+
+.works-text {
+  line-height: 50px;
+  padding: 10px;
+  height: 30%;
+  width: 100%;
+}
+
+.works-text > a {
+  text-decoration: none;
+}
+
+.work-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 14px;
+}
+
+.image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+.overlay-title {
+  margin: 0;
+  font-weight: bold;
+}
+
