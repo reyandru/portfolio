@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/about_me.css";
+import "../styles/has_header.css";
 
 import { Me2, Address, B_Day, College, Course, Major, Hobbies } from "../assets/assests";
 
@@ -15,7 +16,7 @@ const skills = [
 
 function AboutMe() {
   return (
-    <section className="about_section has_header">
+    <section className="about_section">
       <h1>About Me</h1>
       <div className="personal">
       <div className="first-row">
