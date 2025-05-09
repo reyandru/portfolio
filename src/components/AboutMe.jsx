@@ -23,9 +23,9 @@ function AboutMe() {
         <p>My name is Rei Andrew C. Bariata </p>
         <img src={B_Day} alt="" width={200}/>
         <p>I live in Brgy, Abulalas Hagonoy, Bulacan</p>
-           <img src={College} alt="" width={600} height={250}/>
+           <img src={College} alt="" width={600} height={300}/>
         <p>My course is Bachelor of Science Information Technology</p>
-           <img src={Major} alt="" width={600} height={250}/>
+           <img src={Major} alt="" width={600} height={300}/>
         <p className="hobbies">
           My Hobbies:
           <span>
@@ -38,11 +38,11 @@ function AboutMe() {
         </p>
       </div>
           <div className="second-row">
-             <img src={Me2} alt="" width={300} height={250}/>
+             <img src={Me2} alt="" width={300} height={300}/>
         <p>My Birthday is on August 19, 2003</p>
            <img src={Address} alt="" width={200}/>
         <p>I studied College in Bulacan State University - Hagonoy Campus</p>
-           <img src={Course} alt="" width={300} height={250}/>
+           <img src={Course} alt="" width={300} height={300}/>
         <p>My Major is Web & App Development</p>
            <img src={Hobbies} alt="" width={200}/>
           </div>

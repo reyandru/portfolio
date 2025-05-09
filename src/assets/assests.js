@@ -27,6 +27,7 @@ import College from '../assets/BSU.jpg';
 import Course from '../assets/CICT.png';
 import Major from '../assets/majordev.png';
 import Hobbies from '../assets/hobbies.png';
+import AboutMeBG from '../assets/AM_BG.png';
 import MyResume from '../assets/Rei_Portfolio.pdf'
 
 export{
@@ -60,4 +61,5 @@ College,
 Course, 
 Major,
 Hobbies,   
+AboutMeBG
 };

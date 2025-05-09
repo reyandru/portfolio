@@ -16,6 +16,7 @@
   justify-content: center;
   height: 670px;
   width: 30%;
+  animation: ring 2s ease-in-out  ; 
 }
 
 
@@ -133,4 +134,23 @@ form textarea{
   color: black;
   column-gap: 10px;
   font-size: 22px;
+}
+
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+}
+25% {
+    transform: rotate(10deg);
+}
+50% {
+    transform: rotate(10deg);
+}
+75% {
+    transform: rotate(-10deg);
+}
+100% {
+    transform: rotate(0deg);
+}
 }
