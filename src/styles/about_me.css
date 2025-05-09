@@ -148,6 +148,19 @@
  animation: percentRate 1.5s ease-in-out;
 }
 
+@media (max-width: 768px) {
+  .personal {
+    flex-direction: column;
+  }
+
+  .first-row, .second-row {
+    width: 100%;
+    padding: 20px;
+    border: none;
+  }
+}
+
+
 @keyframes percentRate{
   from{
     width:0px;
